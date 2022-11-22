@@ -1,4 +1,4 @@
-//RUN IN C 
+//run in c
 
 #include<stdio.h>
 #include<conio.h>
@@ -45,81 +45,97 @@ void sucess()
 	if(board[0]==board[1]==board[2])
     {   c=board[0];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
 	else if(board[3]==board[4]==board[5])
     {   c=board[3];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}	
     else if(board[6]==board[7]==board[8])
     {   c=board[6];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
     else if(board[0]==board[3]==board[6])
     {   c=board[0];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
     else if(board[1]==board[4]==board[7])
     {   c=board[1];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
     else if(board[2]==board[5]==board[8])
     {   c=board[2];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
     else if(board[0]==board[4]==board[8])
     {   c=board[0];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
     else if(board[2]==board[4]==board[6])
     {   c=board[2];
 	    if(c==1)
-	    {clrscr();
-	    printf("\n\n\n\tp1 is winner");}
+	    {	
+			clrscr();
+	    	printf("\n\n\n\tp1 is winner");
+		}
 	    else{
-	    clrscr();
-	    printf("\n\n\n\tp2 is winner");
+	    	clrscr();
+	    	printf("\n\n\n\tp2 is winner");
 	    }
 	}
 }
@@ -129,15 +145,25 @@ void p1()
 {    int a;
 	scanf("%d", &a);
 	if(board[a-1]==0)
-	{board[a-1]=1;    }
-	else{p1();}       }
+	{
+		board[a-1]=1;    
+	}
+	else{
+		p1();
+	}       
+}
 
 void p2()
 {    int b;
-scanf("%d", &b);
-if(board[b-1]==0)
-{board[b-1]=2;  }
-else{p2();}     }
+	scanf("%d", &b);
+	if(board[b-1]==0)
+	{
+		board[b-1]=2;  
+	}
+	else{
+		p2();
+	}     
+}
 
 void show()
 {
@@ -146,8 +172,11 @@ void show()
       printf("\tTIC TAC TOE");
       printf("\n\n\n");
       for(i=0;i<3;i++)
-      {    for(j=0;j<3;j++)
-	    {     printf("\t%d", board[k]);
-		  k++;}
+      {    
+		for(j=0;j<3;j++)
+	    {     
+			printf("\t%d", board[k]);
+		  	k++;
+		}
 	    printf("\n");}
  }
