@@ -1,3 +1,5 @@
+//RUN IN C 
+
 #include<stdio.h>
 #include<conio.h>
 void p1();
